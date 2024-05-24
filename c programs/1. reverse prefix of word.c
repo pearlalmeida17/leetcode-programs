@@ -39,3 +39,13 @@ char* reversePrefix(char* word, char ch)
      
 }
 
+int main(){
+   char word[] = "abcde\0";
+   char ch = 'd';
+   char *res = reversePrefix(word, ch);
+   for(int i=0; i<strlen(res); i++) 
+      printf("%c", res[i]);
+   return 0;
+}
+
+
